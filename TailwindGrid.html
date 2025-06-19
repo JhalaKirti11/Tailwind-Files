@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind CDN Example</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100">
+    <div className="w-full max-w-[845px] border border-blue-400 rounded-md p-6 space-y-6">
+        <h2 className="text-xl md:text-2xl font-bold">Browse by Country</h2>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+            <div className="border rounded-lg p-4 shadow-sm hover:shadow-md transition">
+                <div className="flex items-center gap-3">
+                    <img src={country.flag} alt={country.name} className="w-6 h-6" />
+                    <span className="font-medium">
+                        Online casinos in {country.name}
+                    </span>
+                </div>
+                <a href="#" className="text-red-500 text-sm font-medium mt-2 inline-block">
+                    View Guide →
+                </a>
+            </div>
+            <div className="border rounded-lg p-4 shadow-sm hover:shadow-md transition">
+                <div className="flex items-center gap-3">
+                    <img src={country.flag} alt={country.name} className="w-6 h-6" />
+                    <span className="font-medium">
+                        Online casinos in {country.name}
+                    </span>
+                </div>
+                <a href="#" className="text-red-500 text-sm font-medium mt-2 inline-block">
+                    View Guide →
+                </a>
+            </div>
+            <div className="border rounded-lg p-4 shadow-sm hover:shadow-md transition">
+                <div className="flex items-center gap-3">
+                    <img src={country.flag} alt={country.name} className="w-6 h-6" />
+                    <span className="font-medium">
+                        Online casinos in {country.name}
+                    </span>
+                </div>
+                <a href="#" className="text-red-500 text-sm font-medium mt-2 inline-block">
+                    View Guide →
+                </a>
+            </div>
+            <div className="border rounded-lg p-4 shadow-sm hover:shadow-md transition">
+                <div className="flex items-center gap-3">
+                    <img src={country.flag} alt={country.name} className="w-6 h-6" />
+                    <span className="font-medium">
+                        Online casinos in {country.name}
+                    </span>
+                </div>
+                <a href="#" className="text-red-500 text-sm font-medium mt-2 inline-block">
+                    View Guide →
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
