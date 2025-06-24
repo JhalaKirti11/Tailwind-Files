@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind CDN Example</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100">
+    <div class="fixed inset-0 z-50 flex items-center justify-center bg-black/50 p-4">
+        <div class="bg-white w-full max-w-md rounded-xl p-6 space-y-4 shadow-lg border border-[#E5E7E8]">
+            <div class="flex justify-between items-start">
+                <h2 class="text-lg font-semibold text-gray-800">Leave Your Feedback</h2>
+                <button  class="text-gray-500 hover:text-black text-xl">&times;</button>
+            </div>
+
+            <form class="space-y-4">
+                <div>
+                    <label class="block text-sm font-medium text-gray-700">Name (optional)</label>
+                    <input type="text" placeholder="Enter your name"
+                        class="mt-1 w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-200" />
+                </div>
+
+                <div>
+                    <label class="block text-sm font-medium text-gray-700">State <span
+                            class="text-red-500">*</span></label>
+                    <select required
+                        class="mt-1 w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-200">
+                        <option value="">Select your state</option>
+                        <option value="NY">New York</option>
+                        <option value="CA">California</option>
+                    </select>
+                    <!-- <p class="text-sm text-red-500 mt-1">State is required.</p> -->
+                </div>
+
+                <div>
+                    <label class="block text-sm font-medium text-gray-700">Casino (optional)</label>
+                    <select
+                        class="mt-1 w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-200">
+                        <option value="">Select casino</option>
+                        <option value="casino1">Casino 1</option>
+                        <option value="casino2">Casino 2</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label class="block text-sm font-medium text-gray-700">Feedback</label>
+                    <textarea rows={4} placeholder="Tell us about your experience..."
+                        class="mt-1 w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-200"></textarea>
+                </div>
+                <div
+                    class="flex items-start gap-2 text-sm text-gray-500 bg-gray-50 border border-gray-200 rounded p-2">
+                    <span class="text-blue-500 text-xl">ℹ️</span>
+                    <p>Your feedback is stored anonymously. No personal data is collected.</p>
+                </div>
+                <div class="flex justify-end gap-2 pt-2">
+                    <button type="button"
+                        class="w-full px-4 py-2 border border-red-500 text-red-500 rounded-md hover:bg-red-50">
+                        Cancel
+                    </button>
+                    <button type="submit" class="w-full px-4 py-2 bg-red-500 text-white rounded-md hover:bg-red-600">
+                        Submit Feedback
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
