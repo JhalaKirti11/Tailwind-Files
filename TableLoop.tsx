@@ -81,9 +81,7 @@ export default function PaymentMethods() {
                         <thead className='text-left bg-gray-100'>
                             <tr>
                                 {tableTitle.map((title, index) => (
-
                                     <th key={index} className="border border-gray-200 px-5 py-4">{title}</th>
-
                                 ))}
                             </tr>
                         </thead>
