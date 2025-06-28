@@ -33,12 +33,14 @@ export default function LegalCasinos() {
                             </div>
                             <button className="order-1 w-full md:w-auto md:order-2 border border-red-400 text-sm md:text-base text-center text-red-400 font-bold rounded-xl py-[10px] flex px-4">
                                 <Image
-                                    src="/icons/bot-solid.png"
+                                    src="/icons/gift_red_icon.svg"
                                     alt="robo"
-                                    width={20}
-                                    height={20}
+                                    width={24}
+                                    height={24}
                                     className='pe-1'
-                                />Ask about legality in your state</button>
+                                />
+                                Ask about legality in your state
+                            </button>
                         </div>
                     </div>
                     <div className='border-x border-gray-200 p-4 md:px-6 md:py-5'>
